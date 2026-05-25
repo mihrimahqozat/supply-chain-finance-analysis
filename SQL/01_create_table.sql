@@ -1,0 +1,30 @@
+DROP TABLE IF EXISTS orders;
+
+CREATE TABLE orders (
+    order_id                    INTEGER,
+    order_date                  TEXT,
+    ship_date                   TEXT,
+    days_for_shipping_real      INTEGER,
+    days_for_shipment_scheduled INTEGER,
+    delivery_status             TEXT,
+    late_delivery_risk          INTEGER,
+    category_name               TEXT,
+    customer_city               TEXT,
+    customer_country            TEXT,
+    customer_segment            TEXT,
+    department_name             TEXT,
+    market                      TEXT,
+    order_item_quantity         INTEGER,
+    order_item_discount         NUMERIC(10, 4),
+    order_item_discount_rate    NUMERIC(10, 4),
+    order_item_product_price    NUMERIC(10, 2),
+    order_item_profit_ratio     NUMERIC(10, 4),
+    order_item_total            NUMERIC(15, 2),
+    order_profit_per_order      NUMERIC(15, 2),
+    order_status                TEXT,
+    payment_type                TEXT,
+    product_name                TEXT,
+    sales                       NUMERIC(15, 2),
+    sales_per_customer          NUMERIC(15, 2),
+    shipping_mode               TEXT
+);
